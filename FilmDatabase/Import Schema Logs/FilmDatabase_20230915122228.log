@@ -1,0 +1,87 @@
+15.09.2023 14:22:28	This log contains information about the import schema operation into project 'FilmDatabase' on computer 'BOSS-5CG22012W5' by user 'sgrossmann'.
+15.09.2023 14:22:28	Import of database schema has started.
+15.09.2023 14:22:33	Gathering database credentials
+15.09.2023 14:22:33	Gathering database options
+15.09.2023 14:22:33	Gathering generic database scoped configuration option
+15.09.2023 14:22:33	Gathering users
+15.09.2023 14:22:33	Gathering roles
+15.09.2023 14:22:33	Gathering application roles
+15.09.2023 14:22:33	Gathering role memberships
+15.09.2023 14:22:33	Gathering filegroups
+15.09.2023 14:22:33	Gathering full-text catalogs
+15.09.2023 14:22:33	Gathering assemblies
+15.09.2023 14:22:33	Gathering certificates
+15.09.2023 14:22:33	Gathering asymmetric keys
+15.09.2023 14:22:33	Gathering symmetric keys
+15.09.2023 14:22:33	Gathering encrypted symmetric keys
+15.09.2023 14:22:33	Gathering schemas
+15.09.2023 14:22:33	Gathering XML schema collections
+15.09.2023 14:22:33	Gathering user-defined data types
+15.09.2023 14:22:33	Gathering user-defined types
+15.09.2023 14:22:33	Gathering table types
+15.09.2023 14:22:33	Gathering unique keys for table types
+15.09.2023 14:22:33	Gathering primary keys for table types
+15.09.2023 14:22:33	Gathering indexes for table types
+15.09.2023 14:22:33	Gathering check constraints for table types
+15.09.2023 14:22:33	Gathering default constraints for table types
+15.09.2023 14:22:33	Gathering partition functions
+15.09.2023 14:22:33	Gathering partition schemes
+15.09.2023 14:22:33	Gathering functions
+15.09.2023 14:22:33	Gathering encrypted functions
+15.09.2023 14:22:33	Gathering aggregates
+15.09.2023 14:22:33	Gathering procedures
+15.09.2023 14:22:33	Gathering encrypted procedures
+15.09.2023 14:22:33	Gathering tables
+15.09.2023 14:22:33	Gathering primary keys
+15.09.2023 14:22:33	Gathering unique constraints
+15.09.2023 14:22:33	Gathering foreign keys
+15.09.2023 14:22:33	Gathering default constraints
+15.09.2023 14:22:33	Gathering check constraints
+15.09.2023 14:22:33	Gathering views
+15.09.2023 14:22:33	Gathering encrypted views
+15.09.2023 14:22:33	Gathering indexes
+15.09.2023 14:22:33	Gathering statistics
+15.09.2023 14:22:33	Gathering full-text index stoplists
+15.09.2023 14:22:33	Gathering search property lists
+15.09.2023 14:22:33	Gathering search properties
+15.09.2023 14:22:33	Gathering full-text indexes
+15.09.2023 14:22:33	Gathering column store indexes
+15.09.2023 14:22:33	Gathering spatial indexes
+15.09.2023 14:22:33	Gathering XML indexes
+15.09.2023 14:22:33	Gathering Selective XML indexes
+15.09.2023 14:22:33	Gathering encrypted triggers
+15.09.2023 14:22:33	Gathering triggers
+15.09.2023 14:22:33	Gathering encrypted and clr ddl triggers
+15.09.2023 14:22:33	Gathering ddl triggers
+15.09.2023 14:22:33	Creating edge constraints
+15.09.2023 14:22:33	Gathering synonyms
+15.09.2023 14:22:33	Gathering defaults
+15.09.2023 14:22:33	Gathering data constraint uddt bindings
+15.09.2023 14:22:33	Gathering rules
+15.09.2023 14:22:33	Gathering data constraint uddt bindings
+15.09.2023 14:22:33	Gathering message types
+15.09.2023 14:22:33	Gathering queues
+15.09.2023 14:22:33	Gathering contracts
+15.09.2023 14:22:33	Gathering services
+15.09.2023 14:22:33	Gathering event notifications
+15.09.2023 14:22:33	Gathering remote service bindings
+15.09.2023 14:22:33	Gathering broker priorities
+15.09.2023 14:22:33	Gathering signatures
+15.09.2023 14:22:33	Gathering data compression options
+15.09.2023 14:22:33	Gathering sequence types
+15.09.2023 14:22:33	Gathering security policies
+15.09.2023 14:22:33	Gather column encryption keys
+15.09.2023 14:22:33	Gathering column master keys
+15.09.2023 14:22:33	Gathering external data sources
+15.09.2023 14:22:33	Gathering external file formats
+15.09.2023 14:22:33	Gathering external tables
+15.09.2023 14:22:33	Gathering extended properties
+15.09.2023 14:22:33	Gathering assemblies
+15.09.2023 14:22:33	Gathering credentials
+15.09.2023 14:22:33	Gathering logins
+15.09.2023 14:22:33	Gathering server audits
+15.09.2023 14:22:33	Scanning project for duplicate elements
+15.09.2023 14:22:33	Finished duplicate element processing
+15.09.2023 14:22:33	Finished importing database.
+15.09.2023 14:22:33	A summary of the import was saved to the following location: C:\Users\sgrossmann\source\repos\581.SIGR\BIS\FilmSammlung\FilmDatabase\Import Schema Logs\FilmDatabase_20230915122228.log
+15.09.2023 14:22:33	Click Finish to continue...

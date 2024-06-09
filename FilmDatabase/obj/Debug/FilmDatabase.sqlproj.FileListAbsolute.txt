@@ -1,0 +1,6 @@
+C:\Users\sgrossmann\source\repos\581.SIGR\BIS\FilmSammlung\FilmDatabase\bin\Debug\FilmDatabase.dacpac
+C:\Users\sgrossmann\source\repos\581.SIGR\BIS\FilmSammlung\FilmDatabase\bin\Debug\FilmDatabase.dll
+C:\Users\sgrossmann\source\repos\581.SIGR\BIS\FilmSammlung\FilmDatabase\bin\Debug\FilmDatabase.pdb
+C:\Users\sgrossmann\source\repos\581.SIGR\BIS\FilmSammlung\FilmDatabase\obj\Debug\FilmDatabase.sqlproj.AssemblyReference.cache
+C:\Users\sgrossmann\source\repos\581.SIGR\BIS\FilmSammlung\FilmDatabase\obj\Debug\FilmDatabase.dll
+C:\Users\sgrossmann\source\repos\581.SIGR\BIS\FilmSammlung\FilmDatabase\obj\Debug\FilmDatabase.pdb

@@ -1,0 +1,31 @@
+{
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.Console", "Serilog.Sinks.File" ],
+    "MinimumLevel": {
+      "Default": "Verbose",
+      "Override": {
+        "System": "Information",
+        "Microsoft": "Information",
+        "Microsoft.EntityFrameworkCore": "Information"
+      }
+    },
+
+    "WriteTo": [
+      { "Name": "Console" },
+      {
+        "Name": "File",
+        "Args": {
+          "path": "Logs/error.txt",
+          "restrictedToMinimumLevel": "Error"
+        }
+      },
+      {
+        "Name": "File",
+        "Args": {
+          "path": "Logs/log.txt",
+          "restrictedToMinimumLevel": "Debug"
+        }
+      }
+    ]
+  }
+}

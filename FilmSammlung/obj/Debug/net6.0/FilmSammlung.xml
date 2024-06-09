@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FilmSammlung</name>
+    </assembly>
+    <members>
+        <member name="T:FilmSammlung.Controllers.NotenController">
+            <summary>
+            Dokumentation zum FilmController, beschreibung des Controller 
+            was dieser im Allgemeinen machen soll
+            </summary>
+        </member>
+        <member name="M:FilmSammlung.Controllers.NotenController.Get">
+            <summary>
+            Gibt alle Noten die in der Datenbank sind zurück
+            </summary>
+            <returns>A list of Noten</returns>
+            <response code="204"> kein Noten wurde gefunden</response>
+        </member>
+        <member name="M:FilmSammlung.Controllers.NotenController.Create(Filmsammlung.Model.Noten)">
+            <summary>
+            Fügt den Noten der mitgegeben wird in die DB rein
+            </summary>
+            <param name="actorRequest"></param>
+            <returns></returns>
+            <response code="200"> returns all the Noten zum sehen ob der Noten in der DB ist</response>
+        </member>
+        <member name="M:FilmSammlung.Controllers.NotenController.Update(Filmsammlung.Model.Noten)">
+            <summary>
+            Updatet den Noten in der Datenbank wenn er bereit in der DB ist.
+            </summary>
+            <param name="notenRequested"></param>
+            <returns>Updated Actor</returns>
+            <response code="200">Noten wurde Updated </response>
+            <response code="400"> es wurde kein gültiger Noten übergeben</response>
+            <response code="404"> Es konnte kein Noten zum updaten gefunden</response>
+        </member>
+        <member name="M:FilmSammlung.Controllers.NotenController.Delete(System.Int32)">
+            <summary>
+            Deletet den Noten mit der gegeben ID
+            </summary>
+            <param name="Id">ID des Noten der deleted wird</param>
+            <returns></returns>
+            <response code="204"> kein Noten wurde gefunden </response>
+            <response code="400"> kein gültiger Request </response>
+        </member>
+        <member name="T:FilmSammlung.Controllers.UserController">
+            <summary>
+            Dokumentation zum UserController, beschreibung des Controller 
+            was dieser im Allgemeinen machen soll
+            </summary>
+        </member>
+        <member name="M:FilmSammlung.Controllers.UserController.Get">
+            <summary>
+            Gibt alle User die in der Datenbank sind zurück
+            </summary>
+            <returns>A list of Users</returns>
+            <response code="204"> kein User wurde gefunden</response>
+        </member>
+        <member name="M:FilmSammlung.Controllers.UserController.GetAllNotenByUserId(System.Int32)">
+            <summary>
+            Gibt alle Noten die in der Datenbank sind zurück
+            </summary>
+            <returns>A list of Noten</returns>
+            <response code="204"> kein Noten wurde gefunden</response>
+        </member>
+        <member name="M:FilmSammlung.Controllers.UserController.Create(Filmsammlung.Model.User)">
+            <summary>
+            Fügt den User der mitgegeben wird in die DB rein
+            </summary>
+            <param name="userRequest"></param>
+            <returns></returns>
+            <response code="200"> returns all the Users zum sehen ob der User in der DB ist</response>
+        </member>
+        <member name="M:FilmSammlung.Controllers.UserController.Update(Filmsammlung.Model.User)">
+            <summary>
+            Updatet den User in der Datenbank wenn er bereit in der DB ist.
+            </summary>
+            <param name="userRequest"></param>
+            <returns>Updated Actor</returns>
+            <response code="200">User wurde Updated </response>
+            <response code="400"> es wurde kein gültiger User übergeben</response>
+            <response code="404"> Es konnte kein User zum updaten gefunden</response>
+        </member>
+        <member name="M:FilmSammlung.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Deletet den User mit der gegeben ID
+            </summary>
+            <param name="Id">ID des Users der deleted wird</param>
+            <returns></returns>
+            <response code="204"> kein AcUsertor wurde gefunden </response>
+            <response code="400"> kein gültiger Request </response>
+        </member>
+    </members>
+</doc>
