@@ -17,7 +17,7 @@ namespace FilmSammlung.Controllers
             userService = userServices;
         }
         /// <summary>
-        /// Gibt alle User zurück
+        /// Gibt alle User zurÃ¼ck
         /// </summary>
         /// <returns>Liste der Users</returns>
         /// <response code="204">Keine User wurden gefunden</response>
@@ -41,7 +41,7 @@ namespace FilmSammlung.Controllers
             }
         }
         /// <summary>
-        /// Gibt alle Noten eines Users zurück
+        /// Gibt alle Noten eines Users zurÃ¼ck
         /// </summary>
         /// <returns>Liste von Noten</returns>
         /// <response code="204">Keine Noten wurden gefunden</response>
@@ -69,7 +69,7 @@ namespace FilmSammlung.Controllers
         /// </summary>
         /// <param name="userRequest"></param>
         /// <returns>Neuer User</returns>
-        /// <response code="200">Gibt den neuen User zurück</response>
+        /// <response code="200">Gibt den neuen User zurÃ¼ck</response>
         [HttpPost()]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<User> Create([FromBody] User userRequest)
@@ -91,9 +91,9 @@ namespace FilmSammlung.Controllers
         /// <param name="userRequest"></param>
         /// <returns>Aktualisierten User</returns>
         /// <response code="200">User wurde aktualisiert</response>
-        /// <response code="400">Es wurde kein gültiger User mitgegeben</response>
+        /// <response code="400">Es wurde kein gÃ¼ltiger User mitgegeben</response>
         /// <response code="404">Es wurde kein User zum Aktualisieren gefunden</response>
-        [HttpPut()]
+        [HttpPut("{Id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -123,12 +123,12 @@ namespace FilmSammlung.Controllers
             }
         }
         /// <summary>
-        /// Löscht einen User
+        /// LÃ¶scht einen User
         /// </summary>
-        /// <param name="Id">ID des Users der gelöscht wird</param>
+        /// <param name="Id">ID des Users der gelÃ¶scht wird</param>
         /// <returns></returns>
         /// <response code="204">Kein User wurde gefunden</response>
-        /// <response code="400">Kein gültiger Request</response>
+        /// <response code="400">Kein gÃ¼ltiger Request</response>
         [HttpDelete("{Id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
