@@ -1,6 +1,6 @@
 Projektname: Lernkontrolle
 
-Projektbeschreibung: Eine App zur Erfassung von Noten aus der Berufsschule
+Projektbeschreibung: Eine App zur Erfassung von Noten aus der Berufsschule. Benutzer loggen sich ein und sehen ihre eigenen Noten und können diese erfassen. Auf Noten anderer Benutzer haben sie keinen Zugriff.
 
 How to run app (it is not deployed, needs to be run locally):
 1. Make sure you have a local MS SQL Server named "(localdb)\\mssqllocaldb"
@@ -14,8 +14,28 @@ How to run app (it is not deployed, needs to be run locally):
 8. Run the command "npm start" in that directory -> this opens a browser with a web app
 9. If not directly redirected to login, click on button "Sign in using Popup"
 10. Sign in with the following credentials:
-11. You cannot currently create a new Note in the app. See the next chapter about injection
+11. You cannot currently create a new Note in the app due to software design errors. See the next chapter to test injection
 
 Injection:
 1. Make sure you have run all previous steps at least until step 5
 2. In the swagger UI, you can make a GET request to /api/Note and get all Noten without authenticating
+
+Wahlthema 1: Broken Authentication
+-> this is covered in that the app allows you to directly access all Noten of all users without authentication (see chapter Injection)
+
+Wahlthema 2: Unsafe Consumption of APIs
+-> this is covered because the API itself is not secured, only the webapp
+
+Softwarearchitektur:
+Die Lösung unterteilt sich in ein Frontend, welches eine React-App ist, ein Backend welches eine Web-API zur Verfügung stellt und mit C# implementiert wurde, und eine Datenbank mit MS SQL Server.
+Für die Authentifizierung im Frontend wird Microsoft Entra ID verwendet.
+
+Sicherheitsrelevante Aspekte:
+-> Die App ist abgesichert und erfordert Authentifizierung über Microsoft, um die Daten der Benutzer zu schützen.
+-> Problem: Die API ist nicht abgesichert.
+
+Entwicklungsprozess:
+Zuerst wurde das Backend implementiert. Es wurde aus einer anderen Codebasis übernommen und angepasst, weshalb noch Namensgebungen wie "FilmSammlung" vorhanden sind. Anschliessend wurde die React-App implementiert, welche die API anspricht.
+
+UI-Design:
+Im Frontend wurden vorgefertigte UI-Komponenten von FluentUI verwendet, um ein microsoft-ähnliches Layout zu erstellen.
