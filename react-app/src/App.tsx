@@ -1,30 +1,24 @@
-import * as React from 'react';
-import './App.css';
-import { Dialog, PrimaryButton, Stack, Text, TextField } from '@fluentui/react';
+import React from 'react';
+import { useIsAuthenticated } from '@azure/msal-react';
+import Login from './components/Login';
+import { Header } from './components/Header';
+import { NotenList } from './components/NotenList';
 
-function App() {
-  // eslint-disable-next-line
-  const [loginDialogOpen, setLoginDialogOpen] = React.useState(false);
-  const [username, setUsername] = React.useState("");
-  const [password, setPassword] = React.useState("");
-
-  const handleLogin = () => {
-    // TODO: Login
-  };
+const App: React.FC = () => {
+  const isAuthenticated = useIsAuthenticated();
 
   return (
-    <>
-      <Stack>
-        <Text>Please login to access</Text>
-        <PrimaryButton onClick={() => setLoginDialogOpen((previous) => !previous)}>Login</PrimaryButton>
-      </Stack>
-      <Dialog hidden={!loginDialogOpen} onDismiss={() => setLoginDialogOpen((previous) => !previous)}>
-        <TextField label='Username' onChange={(_, newValue) => setUsername(() => newValue ?? "")}></TextField>
-        <TextField label='Password' onChange={(_, newValue) => setPassword(() => newValue ?? "")}></TextField>
-        <PrimaryButton disabled={username === "" || password === ""} onClick={(_) => handleLogin()}>Login</PrimaryButton>
-      </Dialog>
-    </>
+    <div>
+      {isAuthenticated ? (
+        <>
+          <Header />
+          <NotenList />
+        </>
+      ) : (
+        <Login />
+      )}
+    </div>
   );
-}
+};
 
 export default App;
