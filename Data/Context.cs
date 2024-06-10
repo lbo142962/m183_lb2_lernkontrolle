@@ -31,7 +31,7 @@ namespace FilmSammlung
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=FilmCollectionDB;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False");
-            optionsBuilder.UseSqlServer("Server=BOSS-5CG22012W5\\SQLEXPRESS;Database=NotenDB; Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=NotenDB; Trusted_Connection=True;");
         } 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
