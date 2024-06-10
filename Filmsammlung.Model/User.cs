@@ -6,7 +6,7 @@ namespace Filmsammlung.Model
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Upn { get; set; }
         public ICollection<Noten> notenListe{ get; set; }
     }
 }
