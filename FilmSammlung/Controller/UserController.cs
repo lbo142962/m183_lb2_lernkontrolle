@@ -112,7 +112,7 @@ namespace FilmSammlung.Controllers
                 }
                 
                 user.notenListe = userRequest.notenListe;
-                user.Name = userRequest.Name;
+                user.Upn = userRequest.Upn;
                 user.Id = userRequest.Id;
 
                 return Ok(user);
