@@ -2,7 +2,7 @@ Projektname: Lernkontrolle
 
 Projektbeschreibung: Eine App zur Erfassung von Noten aus der Berufsschule. Benutzer loggen sich ein und sehen ihre eigenen Noten und können diese erfassen. Auf Noten anderer Benutzer haben sie keinen Zugriff.
 
-How to run app (it is not deployed, needs to be run locally):
+How to run app (it is not deployed and needs to be run locally):
 1. Make sure you have a local MS SQL Server named "(localdb)\\mssqllocaldb"
 1. Open FilmSammlung.sln in Visual Studio
 2. Select in Taskbar "Tools" -> "NuGet Package Manager" -> "Package Manager Console"
