@@ -13,7 +13,7 @@ How to run app (it is not deployed, needs to be run locally):
 7. Run the command "npm install" in that directory
 8. Run the command "npm start" in that directory -> this opens a browser with a web app
 9. If not directly redirected to login, click on button "Sign in using Popup"
-10. Sign in with the following credentials:
+10. Sign in with the following credentials: Username: "stfs@045f1.onmicrosoft.com" Password: "bftUlMU3"
 11. You cannot currently create a new Note in the app due to software design errors. See the next chapter to test injection
 
 Injection:
