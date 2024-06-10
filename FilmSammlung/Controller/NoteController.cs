@@ -89,6 +89,8 @@ namespace FilmSammlung.Controllers
                 }
                 note.Id = noteRequested.Id;
                 note.userId = noteRequested.userId;
+                note.Value = noteReqested.Value;
+                note.Description = noteRequested.Description;
                 note.User = noteRequested.User;
 
                 noteService.UpdateNote(note);
