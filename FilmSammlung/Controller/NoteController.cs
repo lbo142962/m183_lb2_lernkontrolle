@@ -18,7 +18,7 @@ namespace FilmSammlung.Controllers
             this.noteService = noteService;
         }
         /// <summary>
-        /// Gibt alle Noten zurück
+        /// Gibt alle Noten zurÃ¼ck
         /// </summary>
         /// <returns>Liste der Noten</returns>
         /// <response code="204">Keine Noten wurden gefunden</response>
@@ -46,7 +46,7 @@ namespace FilmSammlung.Controllers
         /// </summary>
         /// <param name="notenRequested"></param>
         /// <returns>Neue Note</returns>
-        /// <response code="200">Gibt die neue Note zurück</response>
+        /// <response code="200">Gibt die neue Note zurÃ¼ck</response>
         [HttpPost()]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<Noten> Create([FromBody] Noten notenRequested)
@@ -68,9 +68,9 @@ namespace FilmSammlung.Controllers
         /// <param name="noteRequested"></param>
         /// <returns>Aktualisierte Note</returns>
         /// <response code="200">Note wurde aktualisiert</response>
-        /// <response code="400">Es wurde keine gültige Note übergeben</response>
+        /// <response code="400">Es wurde keine gÃ¼ltige Note Ã¼bergeben</response>
         /// <response code="404">Es wurde keine Note zum Aktualisieren gefunden</response>
-        [HttpPut()]
+        [HttpPut("{Id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -100,12 +100,12 @@ namespace FilmSammlung.Controllers
             }
         }
         /// <summary>
-        /// Löscht eine Note
+        /// LÃ¶scht eine Note
         /// </summary>
-        /// <param name="Id">ID der Note die gelöscht wird</param>
+        /// <param name="Id">ID der Note die gelÃ¶scht wird</param>
         /// <returns></returns>
         /// <response code="204">Keine Note wurde gefunden</response>
-        /// <response code="400">Kein gültiger Request</response>
+        /// <response code="400">Kein gÃ¼ltiger Request</response>
         [HttpDelete("{Id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
